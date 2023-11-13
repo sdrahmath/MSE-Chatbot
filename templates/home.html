@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multi Source Explorer 📈</title>
+    <header>
+        <div class="header">
+            <h1>Multi Source Explorer 📈</h1>
+        </div>
+    </header>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">   
+</head>
+<body>
+    <div class="container">
+        <a class="sub_container" href="{{ url_for('urls') }}" >
+            <img src="{{ url_for('static', filename='URLS.jpg') }}" alt="Urls Icon" class="icon">
+            <label class="label">Chat Using Urls</label>
+        </a>
+        <a class="sub_container" href="{{ url_for('pdf') }}" >
+            <img src="{{ url_for('static', filename='pdf.jpg') }}" alt="PDF Icon" class="icon">
+            <label class="label">Chat Using Pdf</label>
+        </a>
+    </div>
+</body>
+</html>

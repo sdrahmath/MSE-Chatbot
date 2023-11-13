@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chat using PDF 💬</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  <header>
+      <div class="header">
+        <h1 style="padding: 10px;">Chat Using PDF💬</h1>
+        <a href="{{ url_for('home') }}" class="back-button">Home</a>
+    </div>
+</header>
+</head>
+
+<body><div class="Upload">
+  <form  method="post" action="/pdf" enctype="multipart/form-data" >
+    <label for="pdf"><center>Upload Your PDF</center></label><br>
+    <input type="file" id="pdf" name="pdf" class="choose">
+    <input type="submit" class="process" name="process_pdf_clicked" value="Process pdf">
+  </form></div>
+  <form class="forms" method="POST" action="/pdf">
+    <label for="user_question"><h2 style="font-weight:bolder;">Ask a Question</h2></label>
+    <input type="text" id="user_question" name="user_question">
+    <input type="submit" value="Submit" class="btn">
+</form>
+{% if response %}
+<div class="answer">
+  <h2>Answer</h2>
+  <p class="para">{{response}}</p>
+</div>{% endif %}
+</body>
+
+</html>

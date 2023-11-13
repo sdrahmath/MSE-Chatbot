@@ -1,0 +1,136 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    color: #f4f4f4;
+    margin: auto;
+    padding: 10px 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-button {
+    border: 3px solid white;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 17px;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+h1{
+    margin: 0;
+}
+
+form {
+    background-color: #1d292785;
+    padding: 20px;
+    border-radius: 26px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.forms{
+    background-color: #1d292785;
+    padding: 20px;
+    border-radius: 26px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"] {
+    width: 98%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    display: flex;
+    /* align-items: center; */
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    background-color: #181d20;
+    color: white;
+    border: none;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Result styling */
+h2, h3 {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Animation for submit buttons */
+input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #000;
+    border: 2px solid #000;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
+}
+.choose{
+    text-align: center;
+}
+
+.Upload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:3px solid black;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: fit-content;
+    font-weight: bolder;
+   
+}
+
+.answer{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.para{
+    text-align: left;
+    max-width: 900px;
+    padding: 10px;
+    margin: auto;
+    background: gainsboro;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+.link{
+    list-style-type: disclosure-closed;
+    max-width: 900px;
+    background: gainsboro;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+    border: 3px solid;
+    border-radius: 200px;
+}

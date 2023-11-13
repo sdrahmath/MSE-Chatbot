@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Using URLs 📈</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <header>
+        <div class="header">
+            <h1 style="padding: 10px;">Chat Using URLS 📈</h1>
+            <a href="{{ url_for('home') }}" class="back-button">Home</a>
+        </div>
+    </header>
+</head>
+<body>
+    <form method="POST" action="/urls">
+        <h2>Article URLs</h2>
+        <input type="text" name="url1" placeholder="URL 1"><br>
+        <input type="text" name="url2" placeholder="URL 2"><br>
+        <input type="text" name="url3" placeholder="URL 3"><br>
+        <input type="submit" name="process_url_clicked" value="Process URLs">
+    </form>
+    
+    
+    <form method="POST" action="/urls">
+        <h2>Ask a Question</h2>
+        <input type="text" name="question" placeholder="Question">
+        <input type="submit" name="submit" value="Submit Question">
+    </form>
+    {% if answer %}
+    <div class="answer">
+        <!-- Display results here -->
+        <h2>Answer</h2>
+        <p class="para">{{ answer }}</p>
+        <h3>Sources</h3>
+        <ul class="link">
+            {% for source in sources %}
+            <a  href="{{ source }}"><li>{{ source }}</li></a>
+            {% endfor %}
+        </ul>
+    </div>{% endif %}
+</body>
+</html>
