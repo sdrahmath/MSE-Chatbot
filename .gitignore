@@ -1,0 +1,4 @@
+/.env
+/venv
+/faiss_store_pdf.pkl
+/faiss_store_url.pkl
